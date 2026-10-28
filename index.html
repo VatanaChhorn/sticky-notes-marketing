@@ -8,6 +8,7 @@
     <meta name="apple-itunes-app" content="app-id=6754217076">
     <link rel="icon" href="images/app-icon.png">
     <link rel="stylesheet" href="style.css">
+    <script src="theme.js"></script>
 </head>
 <body>
     <nav>
@@ -18,6 +19,7 @@
                 <li><a href="#support">Support</a></li>
                 <li><a href="privacy.html">Privacy</a></li>
                 <li><a href="terms.html">Terms</a></li>
+                <li><button class="theme-toggle" type="button">Auto</button></li>
             </ul>
         </div>
     </nav>
@@ -31,10 +33,8 @@
             <a class="button" href="https://apps.apple.com/app/id6754217076">Download on the App Store</a>
         </div>
 
-        <picture>
-            <source srcset="images/notes-dark.jpg" media="(prefers-color-scheme: dark)">
-            <img class="shot" src="images/notes-light.jpg" alt="The Sticky Notes grid with colorful notes and checklists">
-        </picture>
+        <img class="shot shot-light" src="images/notes-light.jpg" alt="The Sticky Notes grid with colorful notes and checklists">
+        <img class="shot shot-dark" src="images/notes-dark.jpg" alt="The Sticky Notes grid in dark mode">
 
         <section id="features" style="margin-top: 88px;">
             <div class="wrap">

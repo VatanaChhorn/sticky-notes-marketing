@@ -1,27 +1,36 @@
+/* Theme: follows the device unless the visitor picks one (theme.js sets data-theme). */
 :root {
-    --bg: #ffffff;
-    --bg-alt: #f5f5f7;
-    --text: #000000;
-    --text-2: #6e6e73;
-    --line: #d2d2d7;
-    --button-bg: #000000;
-    --button-text: #ffffff;
-    --nav-bg: rgba(255, 255, 255, 0.8);
     color-scheme: light dark;
+    --bg: light-dark(#ffffff, #000000);
+    --bg-alt: light-dark(#f5f5f7, #161617);
+    --text: light-dark(#000000, #ffffff);
+    --text-2: light-dark(#6e6e73, #a1a1a6);
+    --line: light-dark(#d2d2d7, #424245);
+    --button-bg: light-dark(#000000, #ffffff);
+    --button-text: light-dark(#ffffff, #000000);
+    --nav-bg: light-dark(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.75));
+}
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
+
+img.shot-dark { display: none; }
+:root[data-theme="dark"] .shot-light { display: none; }
+:root[data-theme="dark"] .shot-dark { display: block; }
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .shot-light { display: none; }
+    :root:not([data-theme="light"]) .shot-dark { display: block; }
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg: #000000;
-        --bg-alt: #161617;
-        --text: #ffffff;
-        --text-2: #a1a1a6;
-        --line: #424245;
-        --button-bg: #ffffff;
-        --button-text: #000000;
-        --nav-bg: rgba(0, 0, 0, 0.75);
-    }
+.theme-toggle {
+    font: inherit; font-size: 13px;
+    color: var(--text-2);
+    background: none;
+    border: 1px solid var(--line);
+    border-radius: 980px;
+    padding: 2px 10px;
+    cursor: pointer;
 }
+.theme-toggle:hover { color: var(--text); border-color: var(--text); }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -47,7 +56,7 @@ nav {
 }
 nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 48px; }
 nav .brand { font-weight: 600; font-size: 17px; text-decoration: none; white-space: nowrap; }
-nav ul { display: flex; gap: 24px; list-style: none; font-size: 13px; }
+nav ul { display: flex; align-items: center; gap: 24px; list-style: none; font-size: 13px; }
 nav ul a { text-decoration: none; color: var(--text-2); }
 nav ul a:hover, nav ul a[aria-current] { color: var(--text); }
 

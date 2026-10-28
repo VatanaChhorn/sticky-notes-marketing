@@ -3,238 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Sticky Notes</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
-            background: #ffffff;
-            color: #1d1d1f;
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .container {
-            max-width: 980px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
-
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            color: #06c;
-            text-decoration: none;
-            font-size: 17px;
-            margin-bottom: 40px;
-            transition: opacity 0.3s ease;
-        }
-
-        .back-link:hover {
-            opacity: 0.7;
-        }
-
-        .back-arrow {
-            margin-right: 8px;
-        }
-
-        header {
-            margin-bottom: 60px;
-            padding-bottom: 40px;
-            border-bottom: 1px solid #d2d2d7;
-        }
-
-        h1 {
-            font-size: 48px;
-            font-weight: 600;
-            letter-spacing: -0.02em;
-            margin-bottom: 16px;
-            color: #1d1d1f;
-        }
-
-        .last-updated {
-            font-size: 14px;
-            color: #86868b;
-        }
-
-        .content {
-            max-width: 800px;
-        }
-
-        h2 {
-            font-size: 32px;
-            font-weight: 600;
-            margin-top: 48px;
-            margin-bottom: 20px;
-            color: #1d1d1f;
-        }
-
-        p {
-            font-size: 17px;
-            color: #1d1d1f;
-            margin-bottom: 16px;
-            line-height: 1.7;
-        }
-
-        ul {
-            margin: 16px 0 16px 24px;
-        }
-
-        li {
-            font-size: 17px;
-            color: #1d1d1f;
-            margin-bottom: 12px;
-            line-height: 1.7;
-        }
-
-        strong {
-            font-weight: 600;
-        }
-
-        footer {
-            margin-top: 80px;
-            padding-top: 40px;
-            border-top: 1px solid #d2d2d7;
-            text-align: center;
-        }
-
-        .footer-content {
-            font-size: 12px;
-            color: #86868b;
-            line-height: 1.8;
-        }
-
-        .footer-content a {
-            color: #06c;
-            text-decoration: none;
-        }
-
-        .footer-content a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 36px;
-            }
-
-            h2 {
-                font-size: 28px;
-            }
-
-            .container {
-                padding: 40px 20px;
-            }
-        }
-    </style>
+    <title>Privacy Policy – Sticky Notes</title>
+    <link rel="icon" href="images/app-icon.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <a href="index.html" class="back-link">
-            <span class="back-arrow">←</span> Back
-        </a>
+    <nav>
+        <div class="wrap">
+            <a class="brand" href="index.html">Sticky Notes</a>
+            <ul>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#support">Support</a></li>
+                <li><a href="privacy.html" aria-current="page">Privacy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <header>
+    <main class="wrap">
+        <article class="legal">
             <h1>Privacy Policy</h1>
-            <p class="last-updated">Last Updated: October 22, 2025</p>
-        </header>
+            <p class="updated">Last updated: October 28, 2026</p>
 
-        <main class="content">
-            <h2>Overview</h2>
-            <p>Sticky Notes ("the App") is a simple note-taking application that respects your privacy. This policy explains how we handle your data.</p>
+            <p>Sticky Notes ("the App") is made by Dynomite ("we", "us"). This policy explains what data the App uses and why.</p>
 
-            <h2>Information We Collect</h2>
-            <p>The App stores the following data locally on your device:</p>
+            <h2>Your notes</h2>
             <ul>
-                <li><strong>Note Content:</strong> Text you enter in your notes</li>
-                <li><strong>Note Metadata:</strong> Creation dates, edit dates, color preferences, archive status, and tag assignments</li>
-                <li><strong>Tags:</strong> Custom organization tags with icons and titles</li>
-                <li><strong>App Preferences:</strong> Theme colors and display settings</li>
+                <li>Your notes, checklists, tags and settings are stored on your device.</li>
+                <li>If iCloud is turned on, they sync through your private iCloud account (Apple CloudKit). We can't see or read them.</li>
+                <li>Widgets read your notes on your device through a shared app container. Nothing is sent to us.</li>
+                <li>Day Highlight is created on your device with Apple Intelligence. Your notes don't leave your device for it.</li>
             </ul>
 
-            <h2>How We Use Your Information</h2>
-            <p>All data is used solely to:</p>
+            <h2>Analytics and crash reports</h2>
+            <p>We use Google Firebase to understand how the App is used and to fix problems:</p>
             <ul>
-                <li>Display and organize your notes</li>
-                <li>Sync your notes across your devices via iCloud</li>
-                <li>Provide widget functionality on your home screen</li>
-                <li>Preserve your customization preferences</li>
+                <li><strong>Firebase Analytics</strong> collects usage data such as app opens, screens viewed, session length, device model, iOS version and approximate country.</li>
+                <li><strong>Firebase Crashlytics</strong> collects crash reports with device and app details.</li>
+            </ul>
+            <p>Neither includes the content of your notes. This data is processed under <a href="https://firebase.google.com/support/privacy">Google's Firebase privacy terms</a>.</p>
+
+            <h2>Purchases</h2>
+            <p>Sticky Notes Pro is sold through the App Store, so Apple handles payment and we never see your payment details. We use <strong>RevenueCat</strong> to check your subscription status. It receives an anonymous app user ID and your App Store purchase history. See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a>.</p>
+
+            <h2>What we don't do</h2>
+            <ul>
+                <li>We don't sell your data.</li>
+                <li>We don't show ads.</li>
+                <li>We don't track you across other companies' apps or websites.</li>
+                <li>We don't have servers that store your notes.</li>
             </ul>
 
-            <h2>Data Storage and Sync</h2>
+            <h2>Keeping and deleting data</h2>
             <ul>
-                <li><strong>Local Storage:</strong> All data is stored locally on your device using SwiftData</li>
-                <li><strong>iCloud Sync:</strong> If enabled on your device, notes automatically sync to your private iCloud container</li>
-                <li><strong>Third-Party Access:</strong> We do not have access to your data. Your notes remain in your private iCloud storage</li>
-                <li><strong>App Group Container:</strong> Used only to share data between the main app and widgets on your device</li>
+                <li>Notes stay until you delete them. Deleting the App removes its data from your device; data in iCloud follows Apple's policies.</li>
+                <li>You can turn off iCloud sync for the App in iOS Settings at any time.</li>
+                <li>To ask about or delete analytics data linked to your device, email us at the address below.</li>
             </ul>
 
-            <h2>Third-Party Services</h2>
-            <p>The App uses:</p>
-            <ul>
-                <li><strong>CloudKit:</strong> Apple's iCloud service for syncing (governed by Apple's Privacy Policy)</li>
-                <li><strong>CloudKitSyncMonitor:</strong> An open-source library to monitor sync status (no data collection)</li>
-            </ul>
-            <p>We do not use:</p>
-            <ul>
-                <li>Analytics services</li>
-                <li>Advertising networks</li>
-                <li>Third-party tracking tools</li>
-                <li>User behavior monitoring</li>
-            </ul>
+            <h2>Children</h2>
+            <p>The App is suitable for all ages and doesn't knowingly collect personal information from children.</p>
 
-            <h2>Data Sharing</h2>
-            <p>We do not:</p>
-            <ul>
-                <li>Sell your data</li>
-                <li>Share your data with third parties</li>
-                <li>Transmit your data to our servers (we don't have any)</li>
-                <li>Access your note content</li>
-            </ul>
-
-            <h2>Data Retention</h2>
-            <ul>
-                <li>Notes remain on your device until you delete them</li>
-                <li>Archived notes persist until manually deleted</li>
-                <li>iCloud sync follows Apple's retention policies</li>
-                <li>Uninstalling the App removes local data; iCloud data persists per Apple's policies</li>
-            </ul>
-
-            <h2>Your Rights</h2>
-            <p>You have complete control over your data:</p>
-            <ul>
-                <li>Delete any note at any time</li>
-                <li>Disable iCloud sync in iOS Settings</li>
-                <li>Export your data (via device backup)</li>
-                <li>Permanently delete the App and all local data</li>
-            </ul>
-
-            <h2>Children's Privacy</h2>
-            <p>The App does not collect personal information and is safe for users of all ages.</p>
-
-            <h2>Changes to This Policy</h2>
-            <p>We may update this Privacy Policy periodically. Changes will be reflected with a new "Last Updated" date.</p>
+            <h2>Changes</h2>
+            <p>We may update this policy. Changes will appear on this page with a new "Last updated" date.</p>
 
             <h2>Contact</h2>
-            <p>For questions about this Privacy Policy, contact:</p>
-            <p><strong>Email:</strong> <a href="mailto:onlyvatana22@gmail.com">onlyvatana22@gmail.com</a></p>
+            <p>Dynomite<br><a href="mailto:dynomite.app@gmail.com">dynomite.app@gmail.com</a></p>
+        </article>
+    </main>
 
-            <h2>Consent</h2>
-            <p>By using Sticky Notes, you consent to this Privacy Policy.</p>
-        </main>
-
-        <footer>
-            <div class="footer-content">
-                For questions or concerns, contact us at <a href="mailto:onlyvatana22@gmail.com">onlyvatana22@gmail.com</a>
-                <br>
-                © 2025 Sticky Notes. All rights reserved.
+    <footer>
+        <div class="wrap">
+            <div class="links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Use</a>
+                <a href="mailto:dynomite.app@gmail.com">Contact</a>
             </div>
-        </footer>
-    </div>
+            <p>Sticky Notes is made by Dynomite. Copyright © 2026 Dynomite. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

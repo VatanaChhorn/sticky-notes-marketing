@@ -3,170 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sticky Notes - Legal</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
-            background: #ffffff;
-            color: #1d1d1f;
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .container {
-            max-width: 980px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 80px;
-            padding-bottom: 40px;
-            border-bottom: 1px solid #d2d2d7;
-        }
-
-        h1 {
-            font-size: 56px;
-            font-weight: 600;
-            letter-spacing: -0.02em;
-            margin-bottom: 16px;
-            color: #1d1d1f;
-        }
-
-        .subtitle {
-            font-size: 21px;
-            font-weight: 400;
-            color: #6e6e73;
-            margin-bottom: 8px;
-        }
-
-        .updated {
-            font-size: 14px;
-            color: #86868b;
-            margin-top: 12px;
-        }
-
-        .links {
-            display: grid;
-            gap: 24px;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .link-card {
-            display: block;
-            padding: 32px;
-            background: #fbfbfd;
-            border: 1px solid #d2d2d7;
-            border-radius: 18px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .link-card:hover {
-            background: #f5f5f7;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-        }
-
-        .link-card h2 {
-            font-size: 28px;
-            font-weight: 600;
-            color: #1d1d1f;
-            margin-bottom: 8px;
-        }
-
-        .link-card p {
-            font-size: 17px;
-            color: #6e6e73;
-            line-height: 1.5;
-        }
-
-        .arrow {
-            display: inline-block;
-            margin-left: 8px;
-            transition: transform 0.3s ease;
-        }
-
-        .link-card:hover .arrow {
-            transform: translateX(4px);
-        }
-
-        footer {
-            margin-top: 80px;
-            padding-top: 40px;
-            border-top: 1px solid #d2d2d7;
-            text-align: center;
-        }
-
-        .footer-content {
-            font-size: 12px;
-            color: #86868b;
-            line-height: 1.8;
-        }
-
-        .footer-content a {
-            color: #06c;
-            text-decoration: none;
-        }
-
-        .footer-content a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 40px;
-            }
-
-            .subtitle {
-                font-size: 19px;
-            }
-
-            .container {
-                padding: 40px 20px;
-            }
-
-            header {
-                margin-bottom: 60px;
-            }
-        }
-    </style>
+    <title>Sticky Notes: Notes &amp; Todos</title>
+    <meta name="description" content="Colorful sticky notes, dash checklists, a calendar and widgets for iPhone, iPhone Duo and iPad. Made by Dynomite.">
+    <meta name="apple-itunes-app" content="app-id=6754217076">
+    <link rel="icon" href="images/app-icon.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
+    <nav>
+        <div class="wrap">
+            <a class="brand" href="index.html">Sticky Notes</a>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#support">Support</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="hero wrap">
+            <img class="icon" src="images/app-icon.png" alt="Sticky Notes app icon">
             <h1>Sticky Notes</h1>
-            <p class="subtitle">Legal Information</p>
-            <p class="updated">Last Updated: October 22, 2025</p>
-        </header>
+            <p class="tagline">Notes and to-dos that stick.</p>
+            <p class="lede">Jot it down, turn it into a checklist, and keep it on your Home Screen. Made for iPhone, iPhone Duo and iPad.</p>
+            <a class="button" href="https://apps.apple.com/app/id6754217076">Download on the App Store</a>
+        </div>
 
-        <main class="links">
-            <a href="privacy.html" class="link-card">
-                <h2>Privacy Policy <span class="arrow">→</span></h2>
-                <p>Learn how we protect your privacy and handle your data.</p>
-            </a>
+        <picture>
+            <source srcset="images/notes-dark.jpg" media="(prefers-color-scheme: dark)">
+            <img class="shot" src="images/notes-light.jpg" alt="The Sticky Notes grid with colorful notes and checklists">
+        </picture>
 
-            <a href="terms.html" class="link-card">
-                <h2>Terms and Conditions <span class="arrow">→</span></h2>
-                <p>Review the terms of service for using Sticky Notes.</p>
-            </a>
-        </main>
-
-        <footer>
-            <div class="footer-content">
-                For questions or concerns, contact us at <a href="mailto:onlyvatana22@gmail.com">onlyvatana22@gmail.com</a>
-                <br>
-                © 2025 Sticky Notes. All rights reserved.
+        <section id="features" style="margin-top: 88px;">
+            <div class="wrap">
+                <h2>Everything a note needs.<br>Nothing it doesn't.</h2>
+                <p class="sub">Simple to start, quick to find, and always where you left it.</p>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Dash checklists</h3>
+                        <p>Start a line with a dash and it becomes a checklist you can tick off.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Tags and colors</h3>
+                        <p>Give every note a color and a tag, then filter to what matters right now.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Calendar</h3>
+                        <p>See each day's notes. On devices with Apple Intelligence, Day Highlight sums up your day, right on your device.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Widgets</h3>
+                        <p>Home Screen and Lock Screen widgets, with checklists you can tick without opening the app.</p>
+                    </div>
+                    <div class="card">
+                        <h3>iCloud sync</h3>
+                        <p>Your notes stay in your private iCloud and follow you to every device.</p>
+                    </div>
+                    <div class="card">
+                        <h3>iPad and iPhone Duo</h3>
+                        <p>Notes and the editor side by side on big screens, split right along the Duo's fold.</p>
+                    </div>
+                </div>
             </div>
-        </footer>
-    </div>
+        </section>
+
+        <section id="support">
+            <div class="wrap">
+                <h2>Support</h2>
+                <p class="sub">Answers to common questions, and a real person when you need one.</p>
+                <div class="faq">
+                    <details>
+                        <summary>How do I make a checklist?</summary>
+                        <p>Start a line with a dash (-) followed by a space. Each dash line becomes a checklist item you can tick off in the note or in a widget.</p>
+                    </details>
+                    <details>
+                        <summary>How many notes can I make for free?</summary>
+                        <p>The free version holds 5 notes and 2 archived notes. When you reach the limit, the app tells you. Sticky Notes Pro removes the limits and unlocks extra features.</p>
+                    </details>
+                    <details>
+                        <summary>My notes aren't syncing.</summary>
+                        <p>Make sure you're signed in to iCloud on each device and that iCloud is turned on for Sticky Notes. In the app, Settings › iCloud Sync shows the current sync status.</p>
+                    </details>
+                    <details>
+                        <summary>How do I restore my purchase?</summary>
+                        <p>Open the Pro screen in the app and tap Restore. Use the same Apple Account you bought Pro with.</p>
+                    </details>
+                    <details>
+                        <summary>How do I add a widget?</summary>
+                        <p>Touch and hold your Home Screen, tap Edit, then Add Widget, and search for Sticky Notes.</p>
+                    </details>
+                </div>
+                <div class="contact">
+                    <p>Still need help? Email us and we'll get back to you.</p>
+                    <a class="button secondary" href="mailto:dynomite.app@gmail.com?subject=Sticky%20Notes%20support">Email dynomite.app@gmail.com</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <div class="links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Use</a>
+                <a href="mailto:dynomite.app@gmail.com">Contact</a>
+            </div>
+            <p>Sticky Notes is made by Dynomite. Copyright © 2026 Dynomite. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
